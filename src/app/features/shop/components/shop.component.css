@@ -1,0 +1,55 @@
+.container * {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container .navigation-link {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container .navigation-link img {
+    width: 18px;
+}
+
+.container .navigation-link p {
+    font-size: 13px;
+    color: #5D5D5D;
+    margin-left: 7px;
+}
+
+.container main {
+    max-width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 20% 77%;
+    gap: 3%;
+}
+
+.container main .filters > div {
+    margin-bottom: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

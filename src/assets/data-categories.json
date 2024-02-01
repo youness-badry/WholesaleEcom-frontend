@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Petit electroménager",
+        "subcategories": [
+            {
+                "name": "Préparation culinaire",
+                "subsubcategories": [
+                    "batteur","robot de cuisine","moulinette","kitchen machine",
+                    "blender"
+                ]
+            },
+            {
+                "name": "Petit déjeuner",
+                "subsubcategories": [
+                   "bouilloire","extracteur de jus","grill pain - toaster"
+                ]
+            },
+            {
+                "name": "Cafetière et expresso",
+                "subsubcategories": [
+                   "expresso à capsule","machine à café pression"
+                ]
+            },
+            {
+                "name": "Four et micro-ondes",
+                "subsubcategories": [
+                   "four posable","micro-ondes"
+                ]
+            }
+        ],
+        "imageUrl": "blender.png"
+    },
+    {
+        "name": "Gros electroménager",
+        "subcategories": [
+            {
+                "name": "Réfrigérateur",
+                "subsubcategories": [
+                    "petit réfrigérateur","réfrigérateur avec congélateur"
+                ]
+            },
+            {
+                "name": "Machine à laver",
+                "subsubcategories": [
+                    "machine à laver à hublot","machine à laver ouverture en haut"
+                ]
+            },
+            {
+                "name": "Cuisinière",
+                "subsubcategories": [
+                    "cuisinière 4 feux","cuisinière 5 feux"
+                ]
+            }
+        ],
+        "imageUrl": "appliances.png"
+    },
+    {
+        "name": "Entretien de la maison",
+        "subcategories": [
+            {
+                "name": "Entretien du sol",
+                "subsubcategories": [
+                    "aspirateur"
+                ]
+            },
+            {
+                "name": "Soin du linge",
+                "subsubcategories": [
+                    "planches à repasser","fer à repasser"
+                ]
+            }
+        ],
+        "imageUrl": "vacuum-cleaner.png"
+    },
+    {
+        "name": "Téléviseur",
+        "subcategories": [
+            {
+                "name": "Téléviseurs",
+                "subsubcategories": [
+                    "smart tv", "4k uhd","oled","qled"
+                ]
+            },
+            {
+                "name": "Support et meubles",
+                "subsubcategories": [
+                    "Support TV"
+                ]
+            }
+        ],
+        "imageUrl": "television.png"
+    }
+]

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="navigation-link">
+        <img src="assets/images/home.png" alt=""> 
+        <p>Accueil > Petit electroménager > Préparation culinaire > Batteur</p>
+    </div>
+    <main>
+        <div class="filters">
+            <div class="filter-by-brands">
+                <app-filter-normal filterName="Marques" [optionsData]="brands"></app-filter-normal>
+            </div>
+            <div class="filter-by-price">
+                <app-filter-price></app-filter-price>
+            </div>
+            
+        </div>
+
+        <div class="result">
+            <div class="toolbar-top">
+                
+            </div>
+            <div class="products">
+                <app-product-card></app-product-card>
+            </div>
+        </div>
+    </main>
+    
+</div>

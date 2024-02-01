@@ -1,0 +1,24 @@
+<div class="filter-normal">
+    <h3 class="filter-name">{{filterName}}</h3>
+    <ul>
+        <li class="brand-label" *ngFor="let option of optionsData" [class.brand-selected]="isOptionSelected(option.name)">
+            <a href="#" (click)="onSelectOption(option)">
+                {{option.name}} <span>({{option.numberproducts}})</span>
+            </a> 
+            <span class="remove-icon" (click)="onDeselectOption(option)">
+                x
+            </span>
+        </li>   
+
+        <!-- <li class="brand-label" [class.brand-selected]="brandSelected">
+            <a href="#" (click)="onSelectOption($event)">
+                aeg <span>(1)</span>
+            </a> 
+            <span class="remove-icon" (click)="onDeselectOption($event)">
+                x
+            </span>
+        </li> -->
+    
+    </ul>
+
+</div>

@@ -1,0 +1,79 @@
+<div class="header-background">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="" [routerLink]="['/home']">
+                    Ecommerce Wholesale
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Tapez ici un produit ou une catégorie de produit">
+                <button type="button">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: rgb(73, 73, 73);"></i>
+                </button>
+            </div>
+            
+            <div class="info-account">
+                <div class="basket">
+                    <i class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(77, 77, 77);"></i>
+                </div>
+        
+                <button class="connexion" type="button" [routerLink]="['/login']">
+                    <i class="fa-regular fa-user"></i> 
+                    <span>Connexion</span>
+                </button>
+                
+            </div>
+        </header>
+    
+        <div class="menu">
+            <ul>
+                <li class="categories">
+                    <a href="" >
+                        <i class="fa-solid fa-bars"></i>
+                        <span>Catégories</span>
+                        <div class="menu-categories">
+                            <ul class="list-categories">                
+                                <li *ngFor="let category of categoriesData; let i = index" (mouseenter)="onMouseEnter(i)" (mouseleave)="onMouseLeave(i)">
+                                    <a href="" class="category-name">
+                                        <img [src]="'assets/images/'+category.imageUrl" alt="">
+                                        <span>{{category.name}}</span>
+                                    </a>
+                                    <!-- *ngIf="activeCategory ==category.name" -->
+                                    <div class="list-subcategories" *ngIf="isActiveCategory(i)">
+                                        <div *ngFor="let subcategory of category.subCategories">
+                                            <span>{{subcategory.name}}</span> 
+                                                <a *ngFor="let subsubcategory of subcategory.subSubCategories" 
+                                                href="" [routerLink]="['/shop', 
+                                                    category.name | removeSpacesAndDiacritics | lowercase, 
+                                                    subcategory.name | removeSpacesAndDiacritics | lowercase, 
+                                                    subsubcategory.name | removeSpacesAndDiacritics | lowercase]"
+                                                >
+                                                    {{subsubcategory.name}}
+                                                </a> 
+                                        </div>
+
+                                    </div>
+                                </li>
+                                
+                                
+                            </ul>
+    
+                            
+                        </div>
+                        
+                        
+                    </a>
+                </li>
+                <li><a href="" [routerLink]="['/marques']" >Nos marques</a></li>
+                <li><a href=""[routerLink]="['/services']" >Nos services</a></li>
+            </ul>
+            
+            
+        </div>
+
+        
+    </div>
+</div>
+
+

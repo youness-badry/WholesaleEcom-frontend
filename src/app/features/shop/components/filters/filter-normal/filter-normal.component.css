@@ -1,0 +1,65 @@
+h3.filter-name {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+h3.filter-name::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #dcdcdc;
+    left: 0;
+    bottom: 0;
+}
+
+.filter-normal li {
+    width: 210px;
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.filter-normal li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 13.5px;
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.filter-normal li a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+.filter-normal .brand-label.brand-selected {
+    background-color: #ecf2f4;
+    border-radius: 12px;
+}
+
+.filter-normal .brand-label span.remove-icon {
+    display: none;
+}
+
+.filter-normal .brand-label.brand-selected span.remove-icon {
+    display: block;
+    font-size: 13px;
+    color: black;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filter-normal li a span {
+    display: inline-block;
+    color: #1574b3;
+    margin-bottom: 5px;
+}

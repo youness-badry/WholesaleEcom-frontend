@@ -1,0 +1,52 @@
+h3.filter-name {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+h3.filter-name::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #dcdcdc;
+    left: 0;
+    bottom: 0;
+}
+
+.filter-price :not(h3) {
+    font-size: 14px;
+}
+
+.filter-price .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filter-price .inputs .field .currency {
+    margin-left: 5px;
+}
+
+.filter-price .inputs .field input {
+    width: 70px;
+    height: 33px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.filter-price button {
+    display: block;
+    margin: 0 auto;
+    padding: 2px 5px;
+}
