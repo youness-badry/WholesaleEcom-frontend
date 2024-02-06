@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Observable, map, switchMap } from 'rxjs';
+import { ShopService } from '../services/shop.service';
+import { Product } from 'src/app/shared/models/product.model';
 
 @Component({
   selector: 'app-shop',
@@ -7,6 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent {
+
+  productsOfSubsubcategory: Product[] = [];
 
   brands: any = [
     {
@@ -39,12 +44,23 @@ export class ShopComponent {
     }
   ];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private shopService: ShopService) {
     
   }
 
   ngOnInit() {
     
+    this.route.paramMap
+    .pipe(
+      map(e => e.get("subsubcategoryId") as string),
+      switchMap( (subsubcategoryId: string) => {
+         return this.shopService.getProductsOfSubSubCategory(subsubcategoryId)
+      })
+    )
+    .subscribe((products: Product[]) => {
+      this.productsOfSubsubcategory = products;
+      
+    });
   }
 
 

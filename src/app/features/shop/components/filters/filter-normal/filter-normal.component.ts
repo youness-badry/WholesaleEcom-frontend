@@ -15,7 +15,7 @@ export class FilterNormalComponent {
   }
 
   ngOnInit() {
-    console.log(this.optionsSelected);
+    // console.log(this.optionsSelected);
     
   }
 

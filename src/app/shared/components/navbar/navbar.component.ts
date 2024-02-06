@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../../models/category.model';
 import { SharedService } from '../../shared.service';
-import { RemoveSpacesAndDiacriticsPipe } from 'src/app/core/pipes/remove-spaces-and-diacritics.pipe';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -17,15 +17,15 @@ export class NavbarComponent implements OnInit{
 
   categoriesData: Category[] = [];
 
-  constructor(private sharedService: SharedService) {}
+  constructor(private sharedService: SharedService, private route: ActivatedRoute) {}
 
   ngOnInit() {
     const categoriesData$ = this.sharedService.fetchCategoriesData();
     categoriesData$.subscribe( response => {
-      console.log(response);
       this.categoriesData = response;
-      console.log(this.categoriesData);
     });
+
+
   }
 
   onMouseEnter(indexCategory: number) {

@@ -44,10 +44,7 @@
                                         <div *ngFor="let subcategory of category.subCategories">
                                             <span>{{subcategory.name}}</span> 
                                                 <a *ngFor="let subsubcategory of subcategory.subSubCategories" 
-                                                href="" [routerLink]="['/shop', 
-                                                    category.name | removeSpacesAndDiacritics | lowercase, 
-                                                    subcategory.name | removeSpacesAndDiacritics | lowercase, 
-                                                    subsubcategory.name | removeSpacesAndDiacritics | lowercase]"
+                                                href="" [routerLink]="['/shop/subsubcategory', subsubcategory.id]"
                                                 >
                                                     {{subsubcategory.name}}
                                                 </a> 

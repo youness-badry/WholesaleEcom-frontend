@@ -23,8 +23,16 @@
     max-width: 100%;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 20% 77%;
-    gap: 3%;
+    grid-template-columns: 240px calc(100% - 300px);
+    gap: 60px;
+}
+
+.container main .filters {
+    /* min-width: 300px; */
+}
+
+.container main .result {
+    
 }
 
 .container main .filters > div {

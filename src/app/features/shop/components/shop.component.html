@@ -19,7 +19,7 @@
                 
             </div>
             <div class="products">
-                <app-product-card></app-product-card>
+                <app-product-card *ngFor="let product of productsOfSubsubcategory" [product]="product"></app-product-card>
             </div>
         </div>
     </main>

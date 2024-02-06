@@ -1,9 +1,9 @@
-import { IProduct } from "./product.model";
+import { Product } from "./product.model";
 
-export interface IPagination {
+export interface Pagination {
     pageIndex: number;
     pageSize: number;
     count: number;
-    data: IProduct[];
+    data: Product[];
 
 }

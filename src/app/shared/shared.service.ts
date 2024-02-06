@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { SharedModule } from './shared.module';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +8,7 @@ import { SharedModule } from './shared.module';
 export class SharedService {
 
   categoriesData: any;
-  baseUrl: string = "https://localhost:7206/api";
+  baseUrl: string = "https://localhost:7081/api";
   getCategoriesUrl: string = this.baseUrl + "/categories";
 
   constructor(private http: HttpClient) { }

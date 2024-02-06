@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from '../app-routing.module';
 import { CoreModule } from '../core/core.module';
 import { RemoveSpacesAndDiacriticsPipe } from '../core/pipes/remove-spaces-and-diacritics.pipe';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,8 +14,8 @@ import { RemoveSpacesAndDiacriticsPipe } from '../core/pipes/remove-spaces-and-d
   imports: [
     CommonModule,
     HttpClientModule,
-    AppRoutingModule,
-    CoreModule
+    CoreModule,
+    RouterModule
   ],
   providers: [
     RemoveSpacesAndDiacriticsPipe

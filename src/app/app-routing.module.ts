@@ -8,7 +8,7 @@ import { LoginComponent } from './features/login/login.component';
 
 const routes: Routes = [
   { 
-    path: 'shop/:category/:subcategory/:subsubcategory', 
+    path: 'shop/subsubcategory/:subsubcategoryId', 
     component: ShopComponent
   },
   { path: 'home', component: HomeComponent},

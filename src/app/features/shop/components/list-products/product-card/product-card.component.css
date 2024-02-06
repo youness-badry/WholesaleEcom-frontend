@@ -1,9 +1,14 @@
 .product-card {
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
     border: 1px solid rgba(151,151,151,.54);
+    border-radius: 12px;
     padding: 22px 10px 15px 15px;
     display: flex;
-    min-width: 690px;
+    max-width: 100%;
+    width: auto;
+    min-width: 700px;
+    margin-bottom: 15px;
+    box-shadow: 4px 2px 7px 0 rgba(0,0,0,.11);
 }
 
 .product-card .product-image {
@@ -16,9 +21,10 @@
 }
 
 .product-card .product-characteristics {
-    width: 65%;
-    min-width: 200px;
+    width: auto;
+    min-width: 260px;
     padding: 0 40px;
+    flex-grow: 3;
 }
 
 .product-card .product-characteristics ul.list-characteristics {
@@ -27,19 +33,41 @@
 
 .product-card .product-characteristics hr {
     margin: 20px 0;
-    min-width: 325px;
-    max-width: 500px;
     border: none;
     height: 1px;
-    background-color: rgb(199, 199, 199);
+    background-color: rgba(151,151,151,.54);
 }
 
 .product-card .product-characteristics .bottom-buttons {
     min-width: 319px;
 }
 
+.product-card .product-characteristics .bottom-buttons .ajouter-favoris {
+    
+}
+
+.product-card .product-characteristics .bottom-buttons .ajouter-favoris i {
+    position: relative;
+}
+
+.product-card .product-characteristics .bottom-buttons .ajouter-favoris i::after {
+    content: "+";
+    position: absolute;
+    font-size: 10px;
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    right: -3.5px;
+    top: -4px;
+}
+
 .product-card .product-characteristics .bottom-buttons button {
-    margin-left: 30px;
+    margin-left: 15px;
     padding: 7px 10px;
     border-radius: 7px;
     cursor: pointer;
@@ -53,7 +81,8 @@
 
 .product-card .price-and-infos {
     padding: 0 10px;
-    min-width: 190px;
+    width: auto;
+    min-width: 140px;
 }
 
 .product-card .price-and-infos > div {
@@ -77,9 +106,9 @@
 }
 
 .product-card .price-and-infos button {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
-    padding: 9px 18px;
+    padding: 9px 20px;
     border-radius: 30px;
     cursor: pointer;
     border-color: transparent;

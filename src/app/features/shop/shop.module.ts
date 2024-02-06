@@ -8,7 +8,7 @@ import { FilterToolbarComponent } from './components/filters/filter-toolbar/filt
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { ProductCardComponent } from './components/list-products/product-card/product-card.component';
 import { CoreModule } from 'src/app/core/core.module';
-import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -25,7 +25,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     SharedModule,
     CoreModule,
-    RouterModule
+    AppRoutingModule
   ],
   exports: [
     ShopComponent
